@@ -42,11 +42,26 @@
       <h3 class="nav">
         <a href="./home.html"><i class="fa-solid fa-house-chimney"></i></a>
       </h3>
-      <h3 class="nav"><a href="./about.html">About</a></h3>
+      <h3 class="nav"><a href="./About/about.html">About</a></h3>
       <h3 class="nav"><a href="#">Works</a></h3>
       <h3 class="nav"><a href="#">Contacts</a></h3>
       <h3 class="text-stroll">Feel free to go stroll around!</h3>
     </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        type: "dot",
+        quantity: 200,
+        direction: 50,
+        backgroundColor: ["#3498db00"],
+        randomOpacity: true,
+        starColor: "#faebd7",
+      });
+    </script>
 
     <script src="home.js"></script>
   </body>

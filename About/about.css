@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
 :root {
   --blue: #3498db;
   --gray: hsl(0, 0%, 80%);
+  --white: #fff;
+  --cream: antiquewhite;
+  --invisible: #3498db00;
 }
 
 * {
@@ -12,10 +17,55 @@ html {
 }
 
 body {
+  font-family: "Lato", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+}
+
+h3.text-inactive {
+  display: none;
+  animation: hilang 0.5s ease;
+}
+
+h3.text-active {
+  min-width: 360px;
+  max-width: 720px;
+  min-height: 250px;
+  max-height: 1000px;
+  border: var(--gray) 1px solid;
+  box-shadow: 4px 4px 4px var(--cream);
+  margin-bottom: 5rem;
+  padding: 2rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: justify;
+  animation: muncul 0.5s ease;
+}
+
+h3 i {
+  margin: 2rem 1rem;
+  font-size: 72px;
+}
+
+@keyframes hilang {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4000px);
+  }
+}
+
+@keyframes muncul {
+  from {
+    transform: translateX(4000px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .wrapper {
@@ -46,7 +96,7 @@ body {
 
 .progress {
   position: absolute;
-  background-color: var(--blue);
+  background-color: var(--cream);
   left: 0;
   width: 0%;
   height: 4px;
@@ -70,8 +120,8 @@ body {
   padding-top: 2.5px;
 }
 
-.active {
-  border-color: var(--blue);
+.circle.active {
+  border-color: var(--cream);
   transition: 0.5s border;
 }
 
@@ -86,7 +136,7 @@ body {
   height: 40px;
   border: none;
   border-radius: 10px;
-  background-color: var(--blue);
+  background-color: var(--cream);
   cursor: pointer;
 }
 
