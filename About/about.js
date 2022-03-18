@@ -50,3 +50,25 @@ prev.addEventListener("click", () => {
     prev.setAttribute("disabled", true);
   }
 });
+
+/* NAV */
+const navButton = document.querySelector(".container-nav");
+const content = document.querySelector(".container-content");
+const navItems = document.querySelectorAll(".nav-icons h3");
+const wrapper = document.querySelector(".wrapper");
+
+window.onload = () => {
+  if (screen.width > 500) {
+    navItems[navItems.length - 1].style.display = "inline-block";
+  }
+};
+
+navButton.addEventListener("click", () => {
+  content.classList.toggle("show-nav");
+  wrapper.classList.toggle("hide");
+  navItems.forEach((e) => {
+    e.classList.toggle("nav-item");
+  });
+});
+
+/* NAV END */

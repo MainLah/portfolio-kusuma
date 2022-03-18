@@ -3,7 +3,7 @@ const content = document.querySelector(".container");
 const navItems = document.querySelectorAll(".nav-icons h3");
 
 window.onload = () => {
-  if (screen.width > 500) {
+  if (screen.width > 720) {
     navItems[navItems.length - 1].style.display = "inline-block";
   }
 };

@@ -8,42 +8,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="about.css" />
     <title>Rendra Kusuma B.</title>
   </head>
   <body>
-    <div class="text">
-      <h3 class="text-active">
-        My name's Rendra Kusuma Blikololo. I'm 19 years old. I'm currently
-        studying English Literature in Universitas Diponegoro. I've been
-        interested in computers since I was a kid. I used to watch my uncle do
-        wonders with them; making programs, building computers, and honestly,
-        even video games felt magical. I was the happiest kid when I finally got
-        a PC. I used to tinker with it so much. I finally got to build my own PC
-        when I was 16 years old.
-      </h3>
-      <h3 class="text-inactive" style="text-align: center">
-        Skills : <br />
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-bootstrap"></i>
-        <i class="fa-brands fa-sass"></i>
-      </h3>
-      <h3 class="text-inactive">Certificates : <br /></h3>
-      <h3 class="text-inactive">
-        My name's Rendra Kusuma Blikololo. I'm 19 years old. I'm currently
-        studying English Literature in Universitas Diponegoro. I've been
-        interested in computers since I was a kid.
-      </h3>
+    <div class="container-nav">
+      <div class="nav-circle"></div>
     </div>
+
+    <div class="container-content">
+      <div class="text">
+        <h3 class="text-active" style="padding-top: 3rem">
+          My name's Rendra Kusuma Blikololo. I'm from Bogor, Jawa Barat,
+          Indonesia and I'm 19 years old. I'm currently studying English
+          Literature in Universitas Diponegoro. I've been interested in
+          computers since I was a kid. I used to watch my uncle do wonders with
+          them; making programs, building computers, and honestly, even video
+          games felt magical. I was the happiest kid when I finally got a PC. I
+          used to tinker with it so much. I finally got to build my own PC when
+          I was 16 years old. I'm confident that this is my passion. Even though
+          I'm learning English Literature, I think I can implement what I learn
+          there into computers and programming.
+        </h3>
+        <h3 class="text-inactive" style="text-align: center">
+          Skills : <br />
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-bootstrap"></i>
+          <i class="fa-brands fa-sass"></i>
+        </h3>
+        <h3 class="text-inactive" style="text-align: center">
+          Certificates : <br />
+          <img
+            src="/Assets/sertif-progate-htmlcss.png"
+            alt="Progate HTML CSS Certificate"
+            width="200"
+            style="border: black 1px solid"
+          />
+          <img src="/Assets/sertif-fcc.png" alt="FCC Certificate" width="200" />
+          <img
+            src="/Assets/sertif-progate-js.png"
+            alt="Progate JS Certificate"
+            width="200"
+            style="border: black 1px solid"
+          />
+        </h3>
+      </div>
+    </div>
+    <div class="nav-icons">
+      <h3 class="nav">
+        <a href="../index.html"><i class="fa-solid fa-house-chimney"></i></a>
+      </h3>
+      <h3 class="nav"><a href="#">About</a></h3>
+      <h3 class="nav"><a href="#">Works</a></h3>
+      <h3 class="nav"><a href="#">Contacts</a></h3>
+    </div>
+
+    <canvas id="canvas"></canvas>
     <div class="wrapper">
-      <div class="container">
+      <div class="container-progress">
         <div class="progress"></div>
         <div class="circle active"><p>1</p></div>
         <div class="circle"><p>2</p></div>
         <div class="circle"><p>3</p></div>
-        <div class="circle"><p>4</p></div>
       </div>
 
       <div class="buttons">
@@ -51,6 +85,20 @@
         <button id="next">Next</button>
       </div>
     </div>
+
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        type: "dot",
+        quantity: 200,
+        direction: 50,
+        backgroundColor: ["#3498db00"],
+        randomOpacity: true,
+        starColor: "#faebd7",
+      });
+    </script>
+
     <script src="about.js"></script>
   </body>
 </html>
