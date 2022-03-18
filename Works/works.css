@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  background-color: antiquewhite;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  margin: 0;
+  min-width: 90vw;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top left;
+  transition: all 0.5s;
+}
+
+.panel {
+  position: relative;
+  margin: 10px;
+  width: 80px;
+  border-radius: 50px;
+  height: 80vh;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+}
+
+.active {
+  width: 800px;
+  transition: all 1s;
+}
+
+.active h3 {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.show-nav {
+  transform: rotate(-15deg);
+}
+
+.container-nav {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  z-index: 1000;
+}
+
+.nav-circle {
+  background-color: violet;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.nav-item:nth-child(1) {
+  position: absolute;
+  bottom: 250px;
+  left: 100px;
+}
+
+.nav-item:nth-child(2) {
+  position: absolute;
+  bottom: 225px;
+  left: 105px;
+}
+
+.nav-item:nth-child(3) {
+  position: absolute;
+  bottom: 200px;
+  left: 110px;
+}
+
+.nav-item:nth-child(4) {
+  position: absolute;
+  bottom: 175px;
+  left: 115px;
+}
+
+.nav-item:nth-child(5) {
+  position: absolute;
+  bottom: 150px;
+  left: 122.5px;
+}
+
+.nav-item:nth-child(6) {
+  position: absolute;
+  bottom: 125px;
+  left: 130px;
+}
+
+.nav {
+  transition: 0.5s all;
+  position: absolute;
+  left: -100px;
+}
+
+.panel:nth-child(1) {
+  background-image: url(./Assets/big-wood-bot.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(2) {
+  background-image: url(./Assets/main-english.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(3) {
+  background-image: url(./Assets/50-projects.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1750px) {
+  .nav-item:nth-child(1) {
+    bottom: 150px;
+    left: 70px;
+  }
+
+  .nav-item:nth-child(2) {
+    bottom: 125px;
+    left: 80px;
+  }
+
+  .nav-item:nth-child(3) {
+    bottom: 100px;
+    left: 90px;
+  }
+
+  .nav-item:nth-child(4) {
+    bottom: 75px;
+    left: 100px;
+  }
+
+  .nav-item:nth-child(5) {
+    bottom: 50px;
+    left: 110px;
+  }
+
+  .nav-item:nth-child(6) {
+    bottom: 25px;
+    left: 120px;
+  }
+}
