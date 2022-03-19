@@ -303,6 +303,10 @@ button:disabled {
     width: 250px;
   }
 
+  .hide {
+    z-index: -1;
+  }
+
   .nav {
     font-size: 14px;
   }

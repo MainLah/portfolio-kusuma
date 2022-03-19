@@ -21,47 +21,30 @@
     <div class="container-nav">
       <div class="nav-circle"></div>
     </div>
+
+    <canvas id="canvas"></canvas>
+
     <div class="container">
-      <div class="content">
-        <h1>Lorem</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facere
-          modi vero asperiores, ipsum voluptates ullam, nobis neque enim, alias
-          eum incidunt dolores molestiae numquam expedita quae commodi culpa
-          odit sequi cum itaque quod reprehenderit? Dignissimos vero laboriosam,
-          expedita aspernatur ipsam quis commodi assumenda minus omnis
-          reprehenderit, fugit enim? Nobis cumque, laborum quaerat nulla, neque
-          eveniet aliquid molestiae excepturi expedita ipsam rem quisquam animi
-          quod hic alias explicabo unde itaque perspiciatis tempora fugit atque
-          ratione sunt! Modi consequuntur, officia dolor aliquid nisi aperiam
-          ducimus, odio, earum quas veritatis fugit voluptatibus autem corporis
-          aliquam minima recusandae sequi vitae blanditiis aspernatur? Quia?
-        </p>
-        <img
-          src="./Assets/ali-moradi-LHMwKGL1PZA-unsplash.jpg"
-          alt="Test Picture"
-          width="400px"
-        />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi,
-          iste fuga. Sit voluptas perferendis non dicta fuga blanditiis ea nulla
-          vel consequatur hic quo a temporibus libero, dolores incidunt atque
-          deserunt ab similique voluptatum eos assumenda aperiam voluptates
-          iure? Corporis inventore non fugit beatae optio aspernatur quos
-          dolore, laudantium soluta ipsam consectetur sit ipsum quidem facilis
-          exercitationem dicta ut rerum, atque esse harum voluptates iusto magni
-          blanditiis. Delectus libero quisquam ipsum, ipsam ea repellendus
-          voluptatibus sunt tempora explicabo reprehenderit tenetur cupiditate
-          quae id animi natus ut nesciunt nemo ullam iusto rem obcaecati
-          laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Eligendi corrupti veniam alias impedit unde. Maxime cupiditate totam
-          ipsum dicta saepe tenetur quis officia hic sint vel, eveniet
-          reiciendis reprehenderit possimus! Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Quasi facilis aut delectus voluptates
-          iusto, rerum ad. Aspernatur, dolore natus doloremque reprehenderit
-          ipsa amet nesciunt optio eius et eaque voluptatibus saepe unde aliquam
-          fuga dicta voluptate beatae veniam fugiat vero? Sequi?
-        </p>
+      <h1>Contact me! Click below!</h1>
+      <div class="anim-nav active">
+        <ul class="nav-list">
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram insta"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-inbox"></i></a>
+          </li>
+        </ul>
+        <button class="icon">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
       </div>
     </div>
     <div class="nav-icons">
@@ -73,6 +56,18 @@
       <h3 class="nav"><a href="#">Contacts</a></h3>
     </div>
 
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        type: "dot",
+        quantity: 200,
+        direction: 50,
+        backgroundColor: ["#3498db00"],
+        randomOpacity: true,
+        starColor: "#faebd7",
+      });
+    </script>
     <script src="contacts.js"></script>
   </body>
 </html>

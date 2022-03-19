@@ -8,3 +8,10 @@ navButton.addEventListener("click", () => {
     e.classList.toggle("nav-item");
   });
 });
+
+const button = document.querySelector("button");
+const nav = document.querySelector(".anim-nav");
+
+button.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
