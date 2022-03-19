@@ -21,22 +21,51 @@
     <div class="container-nav">
       <div class="nav-circle"></div>
     </div>
+
+    <canvas id="canvas"></canvas>
+
     <div class="container">
       <div class="panel active" style="color: white">
-        <h3>Big Wood Discord Bot</h3>
+        <h3>
+          <a href="https://github.com/MainLah/Big-Wood-Discord-Bot"
+            >Big Wood Discord Bot</a
+          >
+        </h3>
       </div>
-      <div class="panel"><h3>Main English Website</h3></div>
-      <div class="panel" style="color: white"><h3>50 Projects (WIP)</h3></div>
+      <div class="panel">
+        <h3>
+          <a href="https://main-english.netlify.app/" style="color: black"
+            >Main English Website</a
+          >
+        </h3>
+      </div>
+      <div class="panel" style="color: white">
+        <h3>
+          <a href="https://github.com/MainLah/Latihan">50 Projects (WIP)</a>
+        </h3>
+      </div>
     </div>
     <div class="nav-icons">
       <h3 class="nav">
         <a href="../index.html"><i class="fa-solid fa-house-chimney"></i></a>
       </h3>
-      <h3 class="nav"><a href="#">About</a></h3>
-      <h3 class="nav"><a href="../Works/works.html">Works</a></h3>
+      <h3 class="nav"><a href="../About/about.html">About</a></h3>
+      <h3 class="nav"><a href="#">Works</a></h3>
       <h3 class="nav"><a href="#">Contacts</a></h3>
     </div>
 
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        type: "dot",
+        quantity: 200,
+        direction: 50,
+        backgroundColor: ["#3498db00"],
+        randomOpacity: true,
+        starColor: "#faebd7",
+      });
+    </script>
     <script src="works.js"></script>
   </body>
 </html>

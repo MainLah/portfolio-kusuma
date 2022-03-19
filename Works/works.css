@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
+:root {
+  --white: #fff;
+  --cream: #faebd7;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,16 +17,31 @@ body {
   height: 100vh;
 }
 
+a:not(.nav a) {
+  color: white;
+  text-decoration: none;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
 .container {
+  background-color: var(--white);
   margin: 0;
+  height: 100vh;
   min-width: 90vw;
-  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   transform-origin: top left;
   transition: all 0.5s;
+  z-index: 1;
 }
 
 .panel {
@@ -62,6 +82,11 @@ body {
   z-index: 1000;
 }
 
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
 .nav-circle {
   background-color: violet;
   width: 200px;
@@ -71,38 +96,27 @@ body {
 
 .nav-item:nth-child(1) {
   position: absolute;
-  bottom: 250px;
-  left: 100px;
+  bottom: 400px;
+  left: 60px;
+  font-size: 24px;
 }
 
 .nav-item:nth-child(2) {
   position: absolute;
-  bottom: 225px;
-  left: 105px;
+  bottom: 300px;
+  left: 75px;
 }
 
 .nav-item:nth-child(3) {
   position: absolute;
   bottom: 200px;
-  left: 110px;
+  left: 100px;
 }
 
 .nav-item:nth-child(4) {
   position: absolute;
-  bottom: 175px;
+  bottom: 100px;
   left: 115px;
-}
-
-.nav-item:nth-child(5) {
-  position: absolute;
-  bottom: 150px;
-  left: 122.5px;
-}
-
-.nav-item:nth-child(6) {
-  position: absolute;
-  bottom: 125px;
-  left: 130px;
 }
 
 .nav {
@@ -132,34 +146,27 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1000px) {
   .nav-item:nth-child(1) {
-    bottom: 150px;
-    left: 70px;
+    bottom: 300px;
+    left: 25px;
   }
 
   .nav-item:nth-child(2) {
-    bottom: 125px;
-    left: 80px;
+    bottom: 210px;
+    left: 45px;
   }
 
   .nav-item:nth-child(3) {
-    bottom: 100px;
-    left: 90px;
+    bottom: 120px;
+    left: 70px;
   }
 
   .nav-item:nth-child(4) {
-    bottom: 75px;
-    left: 100px;
+    bottom: 30px;
+    left: 80px;
   }
-
-  .nav-item:nth-child(5) {
-    bottom: 50px;
-    left: 110px;
-  }
-
-  .nav-item:nth-child(6) {
-    bottom: 25px;
-    left: 120px;
+  .text-stroll {
+    display: none;
   }
 }
