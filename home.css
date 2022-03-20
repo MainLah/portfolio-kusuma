@@ -133,6 +133,52 @@ a {
   transform: translateX(75.5%);
 }
 
+@media screen and (max-width: 1300px) {
+  .content img {
+    margin: auto;
+    transform: translateX(0);
+    width: 200px;
+  }
+
+  .content h1 {
+    margin: 2rem;
+    font-size: 20px;
+  }
+
+  .content h2 {
+    margin-top: 5rem;
+    font-size: 18px;
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .nav-item:nth-child(1) {
+    bottom: 300px;
+    left: 25px;
+  }
+
+  .nav-item:nth-child(2) {
+    bottom: 210px;
+    left: 45px;
+  }
+
+  .nav-item:nth-child(3) {
+    bottom: 120px;
+    left: 70px;
+  }
+
+  .nav-item:nth-child(4) {
+    bottom: 30px;
+    left: 80px;
+  }
+
+  .text-stroll {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .content img {
     width: 150px;

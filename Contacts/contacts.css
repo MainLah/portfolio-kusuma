@@ -186,7 +186,7 @@ li {
   font-size: 25px !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .nav {
     font-size: 14px;
   }
