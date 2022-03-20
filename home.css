@@ -133,7 +133,7 @@ a {
   transform: translateX(75.5%);
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .content img {
     margin: auto;
     transform: translateX(0);
@@ -179,7 +179,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .content img {
     width: 150px;
   }
