@@ -179,7 +179,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .content img {
     width: 150px;
   }

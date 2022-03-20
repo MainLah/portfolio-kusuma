@@ -277,7 +277,7 @@ button:disabled {
   left: -100px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .text h3 {
     font-size: 16px;
     min-width: 100px;

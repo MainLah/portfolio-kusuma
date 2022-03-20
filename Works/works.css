@@ -146,7 +146,7 @@ a:not(.nav a) {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .nav {
     font-size: 14px;
   }
