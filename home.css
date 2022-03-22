@@ -5,11 +5,6 @@
   --cream: #faebd7;
 }
 
-/* 
-test {
-  test: test
-} */
-
 * {
   box-sizing: border-box;
 }
@@ -136,6 +131,9 @@ a {
 .content img {
   display: block;
   transform: translateX(75.5%);
+  border: 1px black solid;
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--cream);
 }
 
 @media screen and (max-width: 1400px) {
@@ -143,6 +141,7 @@ a {
     margin: auto;
     transform: translateX(0);
     width: 200px;
+    height: 200px;
   }
 
   .content h1 {
