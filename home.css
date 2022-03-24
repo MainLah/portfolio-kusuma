@@ -121,7 +121,7 @@ a {
 }
 
 .content h1 {
-  margin: 3rem;
+  margin: 1rem 0 2.5rem 0;
 }
 
 .content h2 {
@@ -130,7 +130,7 @@ a {
 
 .content img {
   display: block;
-  transform: translateX(75.5%);
+  margin: auto;
   border: 1px black solid;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--cream);
@@ -225,5 +225,3 @@ a {
     display: none;
   }
 }
-
-/* test */
