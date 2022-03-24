@@ -116,7 +116,7 @@ a:not(.nav a) {
 .nav-item:nth-child(4) {
   position: absolute;
   bottom: 100px;
-  left: 115px;
+  left: 105px;
 }
 
 .nav {
