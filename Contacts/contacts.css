@@ -26,6 +26,10 @@ button {
   width: 40px;
 }
 
+button:focus {
+  outline: none;
+}
+
 ul {
   list-style: none;
   transform: translateX(-10%);
