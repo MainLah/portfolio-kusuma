@@ -185,7 +185,8 @@ a {
 
 @media screen and (max-width: 1000px) {
   .content img {
-    width: 150px;
+    width: 250px;
+    height: 250px;
   }
 
   .content h1 {
