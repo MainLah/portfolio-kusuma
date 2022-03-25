@@ -47,6 +47,14 @@ body {
   z-index: 101;
 }
 
+.container-content > h2 {
+  position: absolute;
+  top: 115px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
 text h3 {
   margin: 0;
 }
@@ -331,6 +339,15 @@ button:disabled {
 }
 
 @media screen and (max-width: 1000px) {
+  .container-content > h2 {
+    top: 85px;
+    text-align: center;
+    width: 300px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+
   .text h3 {
     font-size: 14px;
     min-width: 100px;

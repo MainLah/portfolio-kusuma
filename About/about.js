@@ -7,7 +7,20 @@ const text = document.querySelectorAll(".text h3");
 
 let circleCounter = 1;
 let progressCounter = 0;
-next.addEventListener("click", () => {
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") {
+    if (circleCounter === 1) return;
+    togglePrev();
+  } else if (e.key === "ArrowRight") {
+    if (circleCounter === circles.length) return;
+    toggleNext();
+  }
+});
+next.addEventListener("click", toggleNext);
+prev.addEventListener("click", togglePrev);
+
+function toggleNext() {
   circles[circleCounter].classList.add("active");
 
   text.forEach((text) =>
@@ -27,9 +40,9 @@ next.addEventListener("click", () => {
   if (circleCounter === circles.length) {
     next.setAttribute("disabled", true);
   }
-});
+}
 
-prev.addEventListener("click", () => {
+function togglePrev() {
   circleCounter--;
   circles[circleCounter].classList.remove("active");
 
@@ -49,7 +62,7 @@ prev.addEventListener("click", () => {
   if (circleCounter === 1) {
     prev.setAttribute("disabled", true);
   }
-});
+}
 
 /* NAV */
 const navButton = document.querySelector(".container-nav");
