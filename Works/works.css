@@ -18,8 +18,10 @@ body {
 }
 
 a:not(.nav a) {
-  color: white;
+  -webkit-text-fill-color: white;
   text-decoration: none;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
 }
 
 #canvas {
@@ -52,6 +54,7 @@ a:not(.nav a) {
   height: 80vh;
   cursor: pointer;
   transition: all 1s;
+  border: 1px solid gray;
 }
 
 .panel h3 {
@@ -59,6 +62,7 @@ a:not(.nav a) {
   bottom: 20px;
   left: 20px;
   opacity: 0;
+  font-size: 32px;
 }
 
 .active {
@@ -143,21 +147,21 @@ a:not(.nav a) {
 }
 
 .panel:nth-child(1) {
-  background-image: url(./Assets/big-wood-bot.png);
+  background-image: url(./Assets/sneakerscout.png);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .panel:nth-child(2) {
-  background-image: url(./Assets/main-english.png);
+  background-image: url(./Assets/profil-demakan.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .panel:nth-child(3) {
-  background-image: url(./Assets/50-projects.png);
+  background-image: url(./Assets/main-english.png);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
